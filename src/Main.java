@@ -13,7 +13,7 @@ public class Main {
     }
 
     private static Korpa korpaKorisnika() {
-        Scanner s = new Scanner(System.in); // skener mora biti ovde, ne radi ako je u main metodi
+        Scanner s = new Scanner(System.in); 
 
         System.out.println("Unesite vase ime: ");
         String ime = s.nextLine();
@@ -56,7 +56,7 @@ public class Main {
 //        }
     private static void Kupovina(Korpa korpa, LinkedList<Proizvod> proizvodi) {
         Scanner sc = new Scanner(System.in); // novi skener, jer je nova private metoda
-        String unos = " "; //inicijalizacija stringa
+        String unos = " ";
 
         while (!unos.equals("zavrsi kupovinu")) { //ako unos nije zavrsi kupovinu prgram se nastavlja
             System.out.println("Unesite bar kod proizvoda koji zelite da dodate u korpu: ");
@@ -75,7 +75,7 @@ public class Main {
             if (postojeci == true) {
                 System.out.println("Proizvod dodat u korpu.");
             } else {
-                System.out.println("Nepostojeci bar kod."); // nzm kako da ovo izbacim - ispisuje se nakon izvrsavanja ispisiRacun :/
+                System.out.println("Nepostojeci bar kod."); 
             }
 
         }
